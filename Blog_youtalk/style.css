@@ -24,7 +24,7 @@
 }
 
 main{
-    margin: 0;
+    margin: 0 0 60px 0;
 }
 
 
@@ -198,14 +198,20 @@ button.burger_icon:hover {
 
 .hero__element{
     position:relative;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     width: 100%;
+    height: auto;
     background: #FFFFFF;
     border: 1px solid #E2E2E2;
     border-radius: 9px;
+    justify-content: space-between;
 }
 
 .hero__text{
+    display: flex;
+    flex-direction: column;
     margin: 13px 0px 14px 16px;
 }
 
@@ -214,6 +220,8 @@ button.burger_icon:hover {
     font-weight: 400;
     font-size: 12px;
 	color:#868686;
+    margin-top:auto;
+    padding-left: 13px;
 } 
 
 .hero__element h3{
@@ -927,7 +935,7 @@ li::marker{
     background-color:#2963A3;
     color: white;
     width: 100vw;
-    margin-left: -17px;    
+    /* margin-left: -17px;     */
 }
 
 .foot__wrap{                            /*обертка*/
@@ -935,30 +943,31 @@ li::marker{
     flex-direction:row;
     flex-wrap: wrap;
     justify-content:flex-start;
-    margin: 20px;
+    margin: 0 26px 0 38px;
+    padding: 25px 0 0 0;
 }
 
 .foot__menu{                            /*меню*/
     display:flex;
     flex-direction: row;
-    max-width: 30%;
-    flex-grow: 1;
+    gap: 30px;
+    /* max-width: 30%; */
+    flex-grow: 0;
+    margin-right: 15px;
  }
 
-.foot__menu ul:first-child{
+ .foot__menu ul{
     padding-left: 0px;
 }
 
-.foot__menu ul:nth-child(2){
-    padding-left: 10px;
-}
-
-.foot__wrap li{
+.foot__menu li{
     color: #FFFFFF;
     font-family: MontserratSB;
     font-weight: 500;
     font-size: 16px;
     list-style-type: none;
+    line-height: 24px;
+    margin-bottom:16px;
 }
 
 .foot__subs-wrap{                            /*подписка*/
@@ -968,9 +977,9 @@ li::marker{
     font-family: MontserratSB;
     font-weight: 500;
     font-size: 16px;
-    max-width: 45%;
+    max-width: 40%;
     width:fit-content;
-    margin-right: 50px;   
+    margin-right: 10px;    
 }
 
 .foot__subs{
@@ -1010,12 +1019,14 @@ li::marker{
 }
 
 .foot__social{
+    margin: 0 0 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 .foot__social-icons{
     opacity: 0.4;
+    padding: 20px 12px 0 0;
  }
 
 .foot__social-icons:hover{
@@ -1028,16 +1039,19 @@ li::marker{
     flex-wrap: wrap;
     align-items: flex-end;
     justify-self: flex-end;
+    border-top: 1px solid rgba(157, 157, 157, 0.3);
+    margin: 0 32px;
 }
 .foot__credits a{
-    padding: 0 15px 0 0;
-    margin: 0 0 10px 20px;
+    padding: 0 48px 0 0;
+    margin: 10px 0 10px 0;
     color: #FFF;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px; /* 142.857% */
+    opacity: 0.7;
 }
 
 /*Медиа-запросы*/
